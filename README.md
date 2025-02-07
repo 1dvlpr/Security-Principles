@@ -78,3 +78,87 @@ This model is widely used in commercial applications, such as financial transact
 
 By understanding these principles and models, we can better assess and improve security measures to protect sensitive information across different domains.
 
+
+Here's a structured README for your content:
+
+---
+
+# ISO/IEC 19249:2017 - Security Techniques  
+
+## Overview  
+The **International Organization for Standardization (ISO)** and the **International Electrotechnical Commission (IEC)** have established **ISO/IEC 19249:2017**, which outlines security principles for designing secure products, systems, and applications.  
+
+This document provides an overview of **five architectural principles** and **five design principles** that help in building secure systems.  
+
+---
+
+## Architectural Principles  
+
+1. **Domain Separation**  
+   - Groups related components as single entities with common security attributes.  
+   - Example: x86 processor privilege levels (Ring 0 for OS kernel, Ring 3 for user-mode apps).  
+
+2. **Layering**  
+   - Structures systems into layers to enforce security policies.  
+   - Example: OSI Model in networking, where each layer provides specific services.  
+
+3. **Encapsulation**  
+   - Hides low-level implementation details and restricts direct data manipulation.  
+   - Example: Object-oriented programming (OOP) using `increment()` instead of direct variable modification.  
+
+4. **Redundancy**  
+   - Ensures availability and integrity through duplicate components.  
+   - Example: RAID 5 storage, where data remains accessible even if a drive fails.  
+
+5. **Virtualization**  
+   - Shares hardware across multiple OS instances, enhancing security and sandboxing.  
+   - Example: Cloud services using virtual machines for isolation.  
+
+---
+
+## Design Principles  
+
+1. **Least Privilege**  
+   - Restricts access to only what is necessary for a user’s role.  
+   - Example: Granting read access without write permissions when unnecessary.  
+
+2. **Attack Surface Minimization**  
+   - Reduces vulnerabilities by limiting exposure.  
+   - Example: Disabling unnecessary services in a Linux system.  
+
+3. **Centralized Parameter Validation**  
+   - Ensures all user inputs are validated centrally to prevent exploits.  
+   - Example: Validating form inputs to prevent SQL injection.  
+
+4. **Centralized General Security Services**  
+   - Unifies security services to maintain consistency and control.  
+   - Example: A centralized authentication server instead of distributed credentials.  
+
+5. **Error and Exception Handling**  
+   - Designs systems to handle failures securely.  
+   - Example: Firewalls should block all traffic by default when they fail.  
+
+---
+
+## Usage Instructions  
+
+When answering security-related questions, refer to the **ISO/IEC 19249 design principles** and select the appropriate principle:  
+
+| **Principle Number** | **Design Principle** |
+|----------------------|----------------------|
+| 1 | Least Privilege |
+| 2 | Attack Surface Minimization |
+| 3 | Centralized Parameter Validation |
+| 4 | Centralized General Security Services |
+| 5 | Error and Exception Handling |
+
+---
+
+## References  
+- [ISO/IEC 19249:2017 Official Documentation](https://www.iso.org/standard/64766.html)  
+- Security best practices based on ISO standards.  
+
+---
+
+
+
