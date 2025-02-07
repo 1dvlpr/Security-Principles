@@ -159,6 +159,53 @@ When answering security-related questions, refer to the **ISO/IEC 19249 design p
 - Security best practices based on ISO standards.  
 
 ---
+Here's a cleaner, more structured version of your README:
 
+---
 
+# Zero Trust vs. Trust but Verify
 
+Trust is an essential part of how we function, but in cybersecurity, it must be approached with caution. If we suspect that a laptop vendor has installed spyware, we may rebuild the system. If we mistrust the hardware itself, we might stop using it altogether. In business and cybersecurity, trust becomes even more complex, requiring strong guiding principles.
+
+Two key security models address trust:
+
+1. **Trust but Verify**
+2. **Zero Trust**
+
+## Trust but Verify
+
+This principle suggests that even when we trust an entity—whether a user, device, or system—we should always verify its actions. Verification typically involves logging and monitoring mechanisms to ensure expected behavior. 
+
+### Challenges:
+- Verifying every action manually is impractical.
+- Automated security solutions like **proxy servers, intrusion detection systems (IDS), and intrusion prevention systems (IPS)** are necessary.
+
+## Zero Trust
+
+Zero Trust operates on the idea that **trust itself is a vulnerability**. This model assumes that all entities, even internal ones, could be threats. It follows the principle: **“Never trust, always verify.”**
+
+### Key Features:
+- No implicit trust based on device location or ownership.
+- Requires authentication and authorization for every access request.
+- Limits the damage of security breaches.
+
+### Microsegmentation:
+One of Zero Trust’s implementations, **microsegmentation**, breaks networks into smaller, controlled segments. Each segment enforces strict access control and authentication, reducing lateral movement in case of a breach.
+
+## Balancing Trust and Security
+
+While Zero Trust enhances security, applying it excessively may disrupt business operations. The goal is to **implement it effectively without unnecessary overhead**.
+
+By strategically applying **Trust but Verify** and **Zero Trust**, organizations can build a more resilient security posture.
+
+---
+
+# Threat Versus Risk
+here are three terms that we need to take note of to avoid any confusion.
+
+- Vulnerability: Vulnerable means susceptible to attack or damage. In information security, a vulnerability is a weakness.
+- Threat: A threat is a potential danger associated with this weakness or vulnerability.
+- Risk: The risk is concerned with the likelihood of a threat actor exploiting a vulnerability and the consequent impact on the business.
+Away from information systems, a showroom with doors and windows made of standard glass suffers a weakness, or vulnerability, due to the nature of glass. Consequently, there is a threat that the glass doors and windows can be broken. The showroom owners should contemplate the risk, i.e. the likelihood that a glass door or window gets broken and the resulting impact on the business.
+
+Consider another example directly related to information systems. You work for a hospital that uses a particular database system to store all the medical records. One day, you are following the latest security news, and you learn that the used database system is not only vulnerable but also a proof-of-concept working exploit code has been released; the released exploit code indicates that the threat is real. With this knowledge, you must consider the resulting risk and decide the next steps.
